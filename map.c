@@ -56,7 +56,6 @@ int **load_map()
             }
         }
     }
-    fclose(file);
 
     return map;
 }
@@ -96,12 +95,4 @@ void draw_map(int **map, SDL_Surface *screen)
             }
         }
     }
-}
-
-void free_map(int **map)
-{
-    int i = 0;
-    for (i = 0; i < NB_BLOCK_WIDTH; i++)
-       free(map[i]);   
-    free(map);
 }

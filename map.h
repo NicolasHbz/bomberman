@@ -3,6 +3,5 @@
 
 void draw_map(int **map, SDL_Surface *screen);
 int **load_map();
-void free_map(int **map);
 
 #endif
